@@ -45,6 +45,10 @@ public class Router extends RouteBuilder {
 
   private ListenAddress listenaddress = null;
 
+  public Router() {
+    init();
+  }
+
   public Router(String[] args) {
     if (args.length == 1) {
       listenaddress = new ListenAddress(args[0], null);
